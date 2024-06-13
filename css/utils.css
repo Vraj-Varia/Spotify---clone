@@ -13,6 +13,13 @@ body {
     height: 100vh;
     overflow: hidden;
     justify-content: space-between;
+
+    @media screen and (max-width: 600px) {
+        background: url(../image/welcome_page1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 header {
@@ -265,6 +272,91 @@ header {
             opacity: 1;
         }
     }
+
+    @media screen and (max-width: 1001px) {
+
+        .side-top-nav,
+        .side-middle-nav,
+        .side-bottom-nav {
+            width: 15vw;
+        }
+
+        .side-middle-nav {
+            .heading {
+                h1 {
+                    font-size: 15px;
+                }
+            }
+
+            .nav-buttons {
+                flex-direction: column-reverse;
+
+                .search-btn {
+                    border-radius: 12px;
+
+                    input {
+                        display: block;
+                        width: 100px;
+                    }
+
+                    &:hover {
+                        background: transparent;
+                        border-bottom: 1px solid black;
+                    }
+                }
+
+                .recent-btn {
+                    color: black;
+
+                    ul {
+                        li {
+                            background: black;
+                        }
+                    }
+
+                    &:hover {
+                        color: darkgrey;
+
+                        ul {
+                            li {
+                                background: darkgrey;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .side-bottom-nav {
+            position: absolute;
+            bottom: 0;
+            width: 95vw;
+            z-index: 1;
+            opacity: 1;
+
+            &:hover {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 80vh;
+
+                .song-preview {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        height: 60vh;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 .music-selection-list {
@@ -280,7 +372,7 @@ header {
     scrollbar-width: none;
 
     .list-navbar {
-        position: fixed;
+        position: absolute;
         top: 0;
         width: 76vw;
         display: flex;
@@ -517,8 +609,18 @@ header {
                     }
                 }
             }
-            @media screen and (max-width: 1627px){
+
+            @media screen and (max-width: 1627px) {
                 grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            @media screen and (max-width: 1218px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media screen and (max-width: 813) {
+                display: flex;
+                flex-direction: column;
             }
         }
 
@@ -663,6 +765,7 @@ header {
                     }
                 }
             }
+
             @media screen and (max-width: 1627px) {
                 display: none;
             }
@@ -690,10 +793,10 @@ header {
                 .left {
                     display: flex;
                     align-items: center;
-                    width: 80%;
-                    background: red;
-                    
-                    
+                    width: 13vw;
+                    /* background: red; */
+
+
                     h1 {
                         margin: 5px;
                     }
@@ -739,6 +842,7 @@ header {
                     }
                 }
             }
+
             @media screen and (max-width: 1627px) {
                 .card {
                     .left {

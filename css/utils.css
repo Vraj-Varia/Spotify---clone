@@ -193,7 +193,8 @@ header {
 
     .side-bottom-nav {
         display: flex;
-        background: rgba(0, 0, 231, 0.600);
+        /* background: rgba(0, 0, 231, 0.600); */
+        background: lightgreen;
         margin: 10px;
         width: 20vw;
         border-radius: 12px;
@@ -336,9 +337,7 @@ header {
             opacity: 1;
 
             &:hover {
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
+                background: linear-gradient(lightblue, lightgreen);
                 flex-direction: column;
                 justify-content: space-around;
                 height: 80vh;

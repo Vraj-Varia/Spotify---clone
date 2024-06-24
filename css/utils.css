@@ -45,7 +45,8 @@ header {
         }
 
         .second,
-        .third {
+        .third,
+        .fourth {
             margin: 5px;
             display: flex;
             align-items: center;
@@ -537,13 +538,13 @@ header {
     .songs-list {
         margin-top: 100px;
         height: max-content;
+        /* display: none; */
 
         .container-1 {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             align-items: center;
 
-            /* justify-content: center; */
             .card {
                 margin: 20px;
                 padding: 10px;
@@ -853,4 +854,35 @@ header {
             }
         }
     }
+
+    .settings {
+        margin-top: 100px;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+
+        .settings_list {
+            width: 40vw;
+            display: flex;
+            flex-direction: column;
+
+            li {
+                list-style: none;
+                background: rgba(255, 255, 255, 0.2);
+                padding: 10px;
+                margin: 10px;
+                font-size: 18px;
+                border-radius: 12px;
+                transition: ease-in-out 300ms;
+
+                &:hover {
+                    background: rgba(255, 255, 255, 0.4);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
 }

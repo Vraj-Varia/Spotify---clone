@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./image/app.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/utils.css">
-    <link rel="stylesheet" href="./css/media_query.css">
     <title>Spotify - Web Player: Music for everyone</title>
 </head>
 
@@ -21,7 +20,7 @@
                 </svg>
             </div>
 
-            <div class="second">
+            <div class="second" id="second">
                 <img src="./image/home.png">
                 <h1>Home</h1>
             </div>
@@ -29,6 +28,11 @@
             <div class="third">
                 <img src="./image/search.png">
                 <h1>Search</h1>
+            </div>
+
+            <div class="fourth" id="fourth">
+                <img src="./image/gears-solid.svg">
+                <h1>Settings</h1>
             </div>
 
         </div>
@@ -112,7 +116,7 @@
                 <h1 class="filter-tag">Podcasts</h1>
             </div>
         </nav>
-        <div class="songs-list">
+        <div class="songs-list" id="song_list">
             <div class="container-ads">
                 <div class="left">
                     <img src="./image/HD-wallpaper-arijit-singh.jpg">
@@ -211,7 +215,19 @@
                 </div>
             </div>
         </div>
+
+        <div class="settings" id="settings">
+            <ul class="settings_list">
+                <li>Theme</li>
+                <li>Profile</li>
+                <li>Upgrade Subscription</li>
+            </ul>
+        </div>
+
     </section>
+
+    <script src="./js/app.js"></script>
+
 </body>
 
 </html>
